@@ -3,3 +3,13 @@ syntax: regexp
 ^AdapterPattern_sample1/Release/AdapterPattern_sample1$
 syntax: regexp
 \.d$
+syntax: regexp
+^AdapterPattern_sample2/Release/AdapterPattern_sample2$
+syntax: regexp
+^FactoryMethodPattern_sample/Release/FactoryMethodPattern_sample$
+syntax: regexp
+^IteratorPattern_practice/Release/IteratorPattern_practice$
+syntax: regexp
+^IteratorPattern_sample/Release/IteratorPattern_sample$
+syntax: regexp
+^TemplateMethodPattern_sample/Release/TemplateMethodPattern_sample$
