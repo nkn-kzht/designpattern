@@ -5,8 +5,8 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_ABSTRACTDISPLAY_HPP_
-#define INCLUDES_ABSTRACTDISPLAY_HPP_
+#ifndef INCLUDES_ABSTRACTDISPLAY_H_
+#define INCLUDES_ABSTRACTDISPLAY_H_
 
 class AbstractDisplay {
 public:
@@ -19,4 +19,4 @@ protected:
 	virtual void close() = 0;
 };
 
-#endif /* INCLUDES_ABSTRACTDISPLAY_HPP_ */
+#endif /* INCLUDES_ABSTRACTDISPLAY_H_ */

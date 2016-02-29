@@ -5,8 +5,7 @@
  *      Author: parallels
  */
 
-#include <IDCard.hpp>
-
+#include <IDCard.h>
 #include <iostream>
 
 namespace idcard {

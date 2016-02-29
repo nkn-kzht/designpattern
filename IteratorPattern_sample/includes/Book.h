@@ -5,20 +5,21 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_BOOK_HPP_
-#define INCLUDES_BOOK_HPP_
+#ifndef INCLUDES_BOOK_H_
+#define INCLUDES_BOOK_H_
 
+#include <IItem.h>
 #include <string>
 
-#include <IItem.hpp>
 
-class Book : public IItem {
+class Book: public IItem {
 public:
 	Book(const std::string& name);
-	~Book() { }
+	~Book() {
+	}
 	const std::string get_name() const;
 private:
 	std::string name_;
 };
 
-#endif /* INCLUDES_BOOK_HPP_ */
+#endif /* INCLUDES_BOOK_H_ */

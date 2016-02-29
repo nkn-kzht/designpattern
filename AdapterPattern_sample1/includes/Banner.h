@@ -5,8 +5,8 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_BANNER_HPP_
-#define INCLUDES_BANNER_HPP_
+#ifndef INCLUDES_BANNER_H_
+#define INCLUDES_BANNER_H_
 
 #include <string>
 
@@ -20,4 +20,4 @@ private:
 	std::string string_;
 };
 
-#endif /* INCLUDES_BANNER_HPP_ */
+#endif /* INCLUDES_BANNER_H_ */

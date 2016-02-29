@@ -5,15 +5,16 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_IPRODUCT_HPP_
-#define INCLUDES_IPRODUCT_HPP_
+#ifndef INCLUDES_IPRODUCT_H_
+#define INCLUDES_IPRODUCT_H_
 
 namespace framework {
 class IProduct {
 public:
-	virtual ~IProduct() { }
+	virtual ~IProduct() {
+	}
 	virtual void use() = 0;
 };
 }
 
-#endif /* INCLUDES_IPRODUCT_HPP_ */
+#endif /* INCLUDES_IPRODUCT_H_ */

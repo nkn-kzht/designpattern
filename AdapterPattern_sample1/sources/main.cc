@@ -5,14 +5,15 @@
  *      Author: parallels
  */
 
+#include <IPrint.h>
+#include <PrintBanner.h>
 #include <memory>
 
-#include <IPrint.hpp>
-#include <PrintBanner.hpp>
 
 int main() {
 	std::string string = "Hello";
-	std::unique_ptr<IPrint> print(static_cast<IPrint*>(new PrintBanner(string)));
+	std::unique_ptr<IPrint> print(
+			static_cast<IPrint*>(new PrintBanner(string)));
 	print->print_weak();
 	print->print_strong();
 	return 0;

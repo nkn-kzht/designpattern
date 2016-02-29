@@ -5,8 +5,7 @@
  *      Author: parallels
  */
 
-#include <Banner.hpp>
-
+#include <Banner.h>
 #include <iostream>
 
 Banner::Banner(std::string& string) {

@@ -5,12 +5,12 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_CHARDISPLAY_HPP_
-#define INCLUDES_CHARDISPLAY_HPP_
+#ifndef INCLUDES_CHARDISPLAY_H_
+#define INCLUDES_CHARDISPLAY_H_
 
-#include <AbstractDisplay.hpp>
+#include <AbstractDisplay.h>
 
-class CharDisplay : public AbstractDisplay {
+class CharDisplay: public AbstractDisplay {
 public:
 	CharDisplay(const char ch);
 	virtual ~CharDisplay();
@@ -22,4 +22,4 @@ private:
 	char ch_;
 };
 
-#endif /* INCLUDES_CHARDISPLAY_HPP_ */
+#endif /* INCLUDES_CHARDISPLAY_H_ */

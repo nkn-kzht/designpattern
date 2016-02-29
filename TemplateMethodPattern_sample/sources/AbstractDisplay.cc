@@ -5,7 +5,7 @@
  *      Author: parallels
  */
 
-#include <AbstractDisplay.hpp>
+#include <AbstractDisplay.h>
 
 AbstractDisplay::AbstractDisplay() {
 }

@@ -5,19 +5,20 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_BOOKSHELFITERATOR_HPP_
-#define INCLUDES_BOOKSHELFITERATOR_HPP_
+#ifndef INCLUDES_BOOKSHELFITERATOR_H_
+#define INCLUDES_BOOKSHELFITERATOR_H_
 
-#include <Book.hpp>
-#include <IItem.hpp>
-#include <IIterator.hpp>
+#include <Book.h>
+#include <IItem.h>
+#include <IIterator.h>
 
 class BookShelf;
 
-class BookShelfIterator : public IIterator {
+class BookShelfIterator: public IIterator {
 public:
 	BookShelfIterator(BookShelf& book_shelf);
-	virtual ~BookShelfIterator() { }
+	virtual ~BookShelfIterator() {
+	}
 	virtual bool has_next() const;
 	virtual const IItem& next();
 private:
@@ -25,6 +26,4 @@ private:
 	int index_;
 };
 
-
-
-#endif /* INCLUDES_BOOKSHELFITERATOR_HPP_ */
+#endif /* INCLUDES_BOOKSHELFITERATOR_H_ */

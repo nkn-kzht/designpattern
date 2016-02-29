@@ -5,9 +5,8 @@
  *      Author: parallels
  */
 
-#include <IFactory.hpp>
-
-#include <IProduct.hpp>
+#include <IFactory.h>
+#include <IProduct.h>
 
 using framework::IProduct;
 

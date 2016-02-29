@@ -5,8 +5,7 @@
  *      Author: parallels
  */
 
-#include <CharDisplay.hpp>
-
+#include <CharDisplay.h>
 #include <iostream>
 
 CharDisplay::CharDisplay(const char ch) {

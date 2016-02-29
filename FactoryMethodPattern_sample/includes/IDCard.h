@@ -5,15 +5,15 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_IDCARD_HPP_
-#define INCLUDES_IDCARD_HPP_
+#ifndef INCLUDES_IDCARD_H_
+#define INCLUDES_IDCARD_H_
 
+#include <IProduct.h>
 #include <string>
 
-#include <IProduct.hpp>
 
 namespace idcard {
-class IDCard : public framework::IProduct {
+class IDCard: public framework::IProduct {
 public:
 	IDCard(std::string& owner);
 	virtual ~IDCard();
@@ -24,4 +24,4 @@ private:
 };
 }
 
-#endif /* INCLUDES_IDCARD_HPP_ */
+#endif /* INCLUDES_IDCARD_H_ */

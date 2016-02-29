@@ -5,8 +5,8 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_IFACTORY_HPP_
-#define INCLUDES_IFACTORY_HPP_
+#ifndef INCLUDES_IFACTORY_H_
+#define INCLUDES_IFACTORY_H_
 
 #include <memory>
 #include <string>
@@ -19,9 +19,11 @@ public:
 	virtual ~IFactory();
 	std::shared_ptr<framework::IProduct> create(std::string& owner);
 protected:
-	virtual std::shared_ptr<framework::IProduct> createProduct(std::string& owner) = 0;
-	virtual void registerProduct(std::shared_ptr<framework::IProduct>& productPtr) = 0;
+	virtual std::shared_ptr<framework::IProduct> createProduct(
+			std::string& owner) = 0;
+	virtual void registerProduct(
+			std::shared_ptr<framework::IProduct>& productPtr) = 0;
 };
 }
 
-#endif /* INCLUDES_IFACTORY_HPP_ */
+#endif /* INCLUDES_IFACTORY_H_ */

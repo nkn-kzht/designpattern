@@ -5,8 +5,7 @@
  *      Author: parallels
  */
 
-#include <StringDisplay.hpp>
-
+#include <StringDisplay.h>
 #include <cstring>
 #include <iostream>
 

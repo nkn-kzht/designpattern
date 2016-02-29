@@ -5,7 +5,7 @@
  *      Author: parallels
  */
 
-#include <Book.hpp>
+#include <Book.h>
 
 Book::Book(const std::string& name) {
 	name_ = name;

@@ -5,14 +5,14 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_STRINGDISPLAY_HPP_
-#define INCLUDES_STRINGDISPLAY_HPP_
+#ifndef INCLUDES_STRINGDISPLAY_H_
+#define INCLUDES_STRINGDISPLAY_H_
 
+#include <AbstractDisplay.h>
 #include <string>
 
-#include <AbstractDisplay.hpp>
 
-class StringDisplay : public AbstractDisplay {
+class StringDisplay: public AbstractDisplay {
 public:
 	StringDisplay(std::string& string);
 	virtual ~StringDisplay();
@@ -26,4 +26,4 @@ private:
 	int width_;
 };
 
-#endif /* INCLUDES_STRINGDISPLAY_HPP_ */
+#endif /* INCLUDES_STRINGDISPLAY_H_ */

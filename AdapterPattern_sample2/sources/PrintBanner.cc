@@ -5,7 +5,7 @@
  *      Author: parallels
  */
 
-#include <PrintBanner.hpp>
+#include <PrintBanner.h>
 
 PrintBanner::PrintBanner(std::string& string) :
 		banner_(new Banner(string)) {

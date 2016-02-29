@@ -5,10 +5,10 @@
  *      Author: parallels
  */
 
+#include <Print.h>
+#include <PrintBanner.h>
 #include <memory>
 
-#include <Print.hpp>
-#include <PrintBanner.hpp>
 
 int main() {
 	std::string string = "Hello";

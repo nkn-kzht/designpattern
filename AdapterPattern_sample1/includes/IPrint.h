@@ -5,15 +5,15 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_PRINT_HPP_
-#define INCLUDES_PRINT_HPP_
+#ifndef INCLUDES_IPRINT_H_
+#define INCLUDES_IPRINT_H_
 
-class Print {
+class IPrint {
 public:
-	Print();
-	virtual ~Print();
+	virtual ~IPrint() {
+	}
 	virtual void print_weak() = 0;
 	virtual void print_strong() = 0;
 };
 
-#endif /* INCLUDES_PRINT_HPP_ */
+#endif /* INCLUDES_IPRINT_H_ */

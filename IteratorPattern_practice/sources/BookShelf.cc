@@ -5,10 +5,10 @@
  *      Author: parallels
  */
 
-#include <BookShelf.hpp>
-#include <BookShelfIterator.hpp>
+#include <Book.h>
+#include <BookShelf.h>
+#include <BookShelfIterator.h>
 
-#include <Book.hpp>
 
 BookShelf::BookShelf() {
 }

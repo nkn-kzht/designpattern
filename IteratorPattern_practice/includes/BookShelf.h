@@ -5,19 +5,19 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_BOOKSHELF_HPP_
-#define INCLUDES_BOOKSHELF_HPP_
+#ifndef INCLUDES_BOOKSHELF_H_
+#define INCLUDES_BOOKSHELF_H_
 
+#include <Book.h>
+#include <IAggregate.h>
+#include <IIterator.h>
 #include <memory>
 #include <list>
 
-#include <Book.hpp>
-#include <IAggregate.hpp>
-#include <IIterator.hpp>
 
 class BookShelfIterator;
 
-class BookShelf : public IAggregate {
+class BookShelf: public IAggregate {
 public:
 	BookShelf();
 	virtual ~BookShelf();
@@ -30,4 +30,4 @@ private:
 	std::list<Book*> books_;
 };
 
-#endif /* INCLUDES_BOOKSHELF_HPP_ */
+#endif /* INCLUDES_BOOKSHELF_H_ */

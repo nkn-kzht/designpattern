@@ -5,13 +5,13 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_PRINTBANNER_HPP_
-#define INCLUDES_PRINTBANNER_HPP_
+#ifndef INCLUDES_PRINTBANNER_H_
+#define INCLUDES_PRINTBANNER_H_
 
-#include <Banner.hpp>
-#include <IPrint.hpp>
+#include <Banner.h>
+#include <IPrint.h>
 
-class PrintBanner : public Banner, public IPrint {
+class PrintBanner: public Banner, public IPrint {
 public:
 	PrintBanner(std::string& string);
 	virtual ~PrintBanner();
@@ -19,4 +19,4 @@ public:
 	virtual void print_strong();
 };
 
-#endif /* INCLUDES_PRINTBANNER_HPP_ */
+#endif /* INCLUDES_PRINTBANNER_H_ */

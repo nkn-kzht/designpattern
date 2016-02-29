@@ -5,15 +5,15 @@
  *      Author: parallels
  */
 
-#ifndef INCLUDES_PRINTBANNER_HPP_
-#define INCLUDES_PRINTBANNER_HPP_
+#ifndef INCLUDES_PRINTBANNER_H_
+#define INCLUDES_PRINTBANNER_H_
 
+#include <Banner.h>
+#include <Print.h>
 #include <memory>
 
-#include <Banner.hpp>
-#include <Print.hpp>
 
-class PrintBanner : public Print {
+class PrintBanner: public Print {
 public:
 	PrintBanner(std::string& string);
 	virtual ~PrintBanner();
@@ -23,4 +23,4 @@ private:
 	std::unique_ptr<Banner> banner_;
 };
 
-#endif /* INCLUDES_PRINTBANNER_HPP_ */
+#endif /* INCLUDES_PRINTBANNER_H_ */

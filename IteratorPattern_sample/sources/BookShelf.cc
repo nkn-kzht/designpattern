@@ -5,13 +5,13 @@
  *      Author: parallels
  */
 
-#include <BookShelf.hpp>
-#include <BookShelfIterator.hpp>
+#include <Book.h>
+#include <BookShelf.h>
+#include <BookShelfIterator.h>
 
-#include <Book.hpp>
 
-BookShelf::BookShelf(const int maxsize)
-: last_(0) {
+BookShelf::BookShelf(const int maxsize) :
+		last_(0) {
 	books_.assign(maxsize, 0);
 }
 

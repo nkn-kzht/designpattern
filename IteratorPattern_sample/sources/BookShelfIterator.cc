@@ -5,12 +5,12 @@
  *      Author: parallels
  */
 
-#include <BookShelfIterator.hpp>
+#include <BookShelf.h>
+#include <BookShelfIterator.h>
 
-#include <BookShelf.hpp>
 
-BookShelfIterator::BookShelfIterator(BookShelf& book_shelf)
- : book_shelf_(book_shelf), index_(0) {
+BookShelfIterator::BookShelfIterator(BookShelf& book_shelf) :
+		book_shelf_(book_shelf), index_(0) {
 }
 
 bool BookShelfIterator::has_next() const {
