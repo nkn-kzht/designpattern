@@ -1,8 +1,9 @@
 
 syntax: regexp
-^AdapterPattern_sample1/Release/AdapterPattern_sample1$
-syntax: regexp
 \.d$
+\.o$
+syntax: regexp
+^AdapterPattern_sample1/Release/AdapterPattern_sample1$
 syntax: regexp
 ^AdapterPattern_sample2/Release/AdapterPattern_sample2$
 syntax: regexp
