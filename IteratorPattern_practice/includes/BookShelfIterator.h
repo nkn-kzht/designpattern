@@ -16,7 +16,7 @@ class BookShelf;
 
 class BookShelfIterator: public IIterator {
 public:
-	BookShelfIterator(BookShelf& book_shelf);
+	explicit BookShelfIterator(BookShelf& book_shelf);
 	virtual ~BookShelfIterator() {
 	}
 	virtual bool has_next() const;

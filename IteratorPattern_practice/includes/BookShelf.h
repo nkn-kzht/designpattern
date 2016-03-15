@@ -8,14 +8,12 @@
 #ifndef INCLUDES_BOOKSHELF_H_
 #define INCLUDES_BOOKSHELF_H_
 
-#include <Book.h>
-#include <IAggregate.h>
-#include <IIterator.h>
 #include <memory>
 #include <list>
 
+#include <IAggregate.h>
 
-class BookShelfIterator;
+class Book;
 
 class BookShelf: public IAggregate {
 public:
