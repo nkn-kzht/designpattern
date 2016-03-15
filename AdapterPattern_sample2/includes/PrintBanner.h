@@ -8,10 +8,10 @@
 #ifndef INCLUDES_PRINTBANNER_H_
 #define INCLUDES_PRINTBANNER_H_
 
-#include <Banner.h>
 #include <Print.h>
 #include <memory>
 
+class Banner;
 
 class PrintBanner: public Print {
 public:

@@ -7,6 +7,8 @@
 
 #include <PrintBanner.h>
 
+#include <Banner.h>
+
 PrintBanner::PrintBanner(std::string& string) :
 		banner_(new Banner(string)) {
 }
