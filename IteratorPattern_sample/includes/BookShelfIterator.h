@@ -8,11 +8,10 @@
 #ifndef INCLUDES_BOOKSHELFITERATOR_H_
 #define INCLUDES_BOOKSHELFITERATOR_H_
 
-#include <Book.h>
-#include <IItem.h>
 #include <IIterator.h>
 
 class BookShelf;
+class IItem;
 
 class BookShelfIterator: public IIterator {
 public:

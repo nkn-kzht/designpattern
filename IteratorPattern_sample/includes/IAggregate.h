@@ -8,9 +8,9 @@
 #ifndef INCLUDES_IAGGREGATE_H_
 #define INCLUDES_IAGGREGATE_H_
 
-#include <IIterator.h>
 #include <memory>
 
+class IIterator;
 
 class IAggregate {
 public:

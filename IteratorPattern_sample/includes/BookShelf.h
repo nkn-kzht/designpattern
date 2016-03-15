@@ -8,18 +8,17 @@
 #ifndef INCLUDES_BOOKSHELF_H_
 #define INCLUDES_BOOKSHELF_H_
 
-#include <Book.h>
-#include <IAggregate.h>
-#include <IIterator.h>
 #include <memory>
 #include <vector>
 
+#include <IAggregate.h>
 
-class BookShelfIterator;
+class Book;
+class IIterator;
 
 class BookShelf: public IAggregate {
 public:
-	BookShelf(const int maxsize);
+	explicit BookShelf(const int maxsize);
 	virtual ~BookShelf();
 	const Book& get_book_at(const int index);
 	void append_book_N(Book* const p_book);

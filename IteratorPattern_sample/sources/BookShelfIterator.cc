@@ -5,9 +5,10 @@
  *      Author: parallels
  */
 
-#include <BookShelf.h>
 #include <BookShelfIterator.h>
 
+#include <Book.h>
+#include <BookShelf.h>
 
 BookShelfIterator::BookShelfIterator(BookShelf& book_shelf) :
 		book_shelf_(book_shelf), index_(0) {

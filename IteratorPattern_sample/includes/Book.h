@@ -8,14 +8,14 @@
 #ifndef INCLUDES_BOOK_H_
 #define INCLUDES_BOOK_H_
 
-#include <IItem.h>
 #include <string>
 
+#include <IItem.h>
 
 class Book: public IItem {
 public:
-	Book(const std::string& name);
-	~Book() {
+	explicit Book(const std::string& name);
+	virtual ~Book() {
 	}
 	const std::string get_name() const;
 private:

@@ -8,7 +8,7 @@
 #ifndef INCLUDES_IITERATOR_H_
 #define INCLUDES_IITERATOR_H_
 
-#include <IItem.h>
+class IItem;
 
 class IIterator {
 public:
