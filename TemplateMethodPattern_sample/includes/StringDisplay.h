@@ -8,13 +8,13 @@
 #ifndef INCLUDES_STRINGDISPLAY_H_
 #define INCLUDES_STRINGDISPLAY_H_
 
-#include <AbstractDisplay.h>
 #include <string>
 
+#include <AbstractDisplay.h>
 
 class StringDisplay: public AbstractDisplay {
 public:
-	StringDisplay(std::string& string);
+	explicit StringDisplay(const std::string& string);
 	virtual ~StringDisplay();
 protected:
 	virtual void open();
@@ -23,7 +23,6 @@ protected:
 private:
 	void printLine();
 	std::string string_;
-	int width_;
 };
 
 #endif /* INCLUDES_STRINGDISPLAY_H_ */

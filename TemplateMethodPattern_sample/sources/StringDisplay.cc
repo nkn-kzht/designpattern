@@ -9,8 +9,8 @@
 #include <cstring>
 #include <iostream>
 
-StringDisplay::StringDisplay(std::string& string) :
-		string_(string), width_(string_.size()) {
+StringDisplay::StringDisplay(const std::string& string) :
+		string_(string) {
 }
 
 StringDisplay::~StringDisplay() {
@@ -30,7 +30,8 @@ void StringDisplay::close() {
 
 void StringDisplay::printLine() {
 	std::cout << "+";
-	for (int i = 0; i < width_; i++) {
+	int size = static_cast<int>(string_.size());
+	for (int i = 0; i < size; i++) {
 		std::cout << "-";
 	}
 	std::cout << "+" << std::endl;

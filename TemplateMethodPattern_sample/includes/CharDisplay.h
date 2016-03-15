@@ -12,7 +12,7 @@
 
 class CharDisplay: public AbstractDisplay {
 public:
-	CharDisplay(const char ch);
+	explicit CharDisplay(const char ch);
 	virtual ~CharDisplay();
 protected:
 	virtual void open();
