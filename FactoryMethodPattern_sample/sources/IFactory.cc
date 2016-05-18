@@ -18,8 +18,8 @@ IFactory::~IFactory() {
 }
 
 std::shared_ptr<IProduct> IFactory::create(std::string& owner) {
-	std::shared_ptr<IProduct> p_product = createProduct(owner);
-	registerProduct(p_product);
-	return p_product;
+  std::shared_ptr<IProduct> p_product = createProduct(owner);
+  registerProduct(p_product);
+  return p_product;
 }
 }  // framework

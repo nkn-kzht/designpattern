@@ -9,9 +9,9 @@
 #define INCLUDES_IITEM_H_
 
 class IItem {
-public:
-	virtual ~IItem() {
-	}
+ public:
+  virtual ~IItem() {
+  }
 };
 
 #endif /* INCLUDES_IITEM_H_ */

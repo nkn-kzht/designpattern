@@ -12,17 +12,17 @@
 
 #include <AbstractDisplay.h>
 
-class StringDisplay: public AbstractDisplay {
-public:
-	explicit StringDisplay(const std::string& string);
-	virtual ~StringDisplay();
-protected:
-	virtual void open();
-	virtual void print();
-	virtual void close();
-private:
-	void printLine();
-	std::string string_;
+class StringDisplay : public AbstractDisplay {
+ public:
+  explicit StringDisplay(const std::string& string);
+  virtual ~StringDisplay();
+ protected:
+  virtual void open();
+  virtual void print();
+  virtual void close();
+ private:
+  void printLine();
+  std::string string_;
 };
 
 #endif /* INCLUDES_STRINGDISPLAY_H_ */

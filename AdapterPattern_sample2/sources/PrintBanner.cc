@@ -9,17 +9,17 @@
 
 #include <Banner.h>
 
-PrintBanner::PrintBanner(std::string& string) :
-		banner_(new Banner(string)) {
+PrintBanner::PrintBanner(std::string& string)
+    : banner_(new Banner(string)) {
 }
 
 PrintBanner::~PrintBanner() {
 }
 
 void PrintBanner::print_weak() {
-	banner_->show_with_paren();
+  banner_->show_with_paren();
 }
 
 void PrintBanner::print_strong() {
-	banner_->show_with_aster();
+  banner_->show_with_aster();
 }

@@ -11,16 +11,15 @@
 #include <IProduct.h>
 #include <string>
 
-
 namespace idcard {
-class IDCard: public framework::IProduct {
-public:
-	IDCard(std::string& owner);
-	virtual ~IDCard();
-	virtual void use();
-	const std::string& getOwner();
-private:
-	std::string owner_;
+class IDCard : public framework::IProduct {
+ public:
+  IDCard(std::string& owner);
+  virtual ~IDCard();
+  virtual void use();
+  const std::string& getOwner();
+ private:
+  std::string owner_;
 };
 }
 

@@ -8,9 +8,9 @@
 #include <Book.h>
 
 Book::Book(const std::string& name) {
-	name_ = name;
+  name_ = name;
 }
 
 const std::string Book::get_name() const {
-	return name_;
+  return name_;
 }

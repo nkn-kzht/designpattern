@@ -15,18 +15,18 @@
 namespace framework {
 class IProduct;
 class Manager {
-public:
-	virtual ~Manager();
-	static Manager& getInstance();
-	void register_product(const std::string& name, IProduct& proto);
-	std::unique_ptr<IProduct> create(const std::string& protoname)
-			throw (std::out_of_range);
-private:
-	Manager();
-	Manager(const Manager& obj) = delete;
-	Manager& operator=(const Manager& obj) = delete;
-	static Manager instance_;
-	std::map<const std::string, std::unique_ptr<IProduct>> show_case_;
+ public:
+  virtual ~Manager();
+  static Manager& getInstance();
+  void register_product(const std::string& name, IProduct& proto);
+  std::unique_ptr<IProduct> create(const std::string& protoname)
+      throw (std::out_of_range);
+ private:
+  Manager();
+  Manager(const Manager& obj) = delete;
+  Manager& operator=(const Manager& obj) = delete;
+  static Manager instance_;
+  std::map<const std::string, std::unique_ptr<IProduct>> show_case_;
 };
 }
 

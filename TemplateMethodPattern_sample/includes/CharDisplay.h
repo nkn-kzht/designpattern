@@ -10,16 +10,16 @@
 
 #include <AbstractDisplay.h>
 
-class CharDisplay: public AbstractDisplay {
-public:
-	explicit CharDisplay(const char ch);
-	virtual ~CharDisplay();
-protected:
-	virtual void open();
-	virtual void print();
-	virtual void close();
-private:
-	char ch_;
+class CharDisplay : public AbstractDisplay {
+ public:
+  explicit CharDisplay(const char ch);
+  virtual ~CharDisplay();
+ protected:
+  virtual void open();
+  virtual void print();
+  virtual void close();
+ private:
+  char ch_;
 };
 
 #endif /* INCLUDES_CHARDISPLAY_H_ */

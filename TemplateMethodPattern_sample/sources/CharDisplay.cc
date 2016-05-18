@@ -9,20 +9,20 @@
 #include <iostream>
 
 CharDisplay::CharDisplay(const char ch) {
-	ch_ = ch;
+  ch_ = ch;
 }
 
 CharDisplay::~CharDisplay() {
 }
 
 void CharDisplay::open() {
-	std::cout << "<<";
+  std::cout << "<<";
 }
 
 void CharDisplay::print() {
-	std::cout << ch_;
+  std::cout << ch_;
 }
 
 void CharDisplay::close() {
-	std::cout << ">>" << std::endl;
+  std::cout << ">>" << std::endl;
 }

@@ -10,20 +10,19 @@
 #include <StringDisplay.h>
 #include <memory>
 
-
 int main() {
-	std::unique_ptr<AbstractDisplay> display1(
-			static_cast<AbstractDisplay*>(new CharDisplay('H')));
-	std::string string1("Hello, world.");
-	std::unique_ptr<AbstractDisplay> display2(
-			static_cast<AbstractDisplay*>(new StringDisplay(string1)));
-	std::string string2("こんにちは。");
-	std::unique_ptr<AbstractDisplay> display3(
-			static_cast<AbstractDisplay*>(new StringDisplay(string2)));
+  std::unique_ptr<AbstractDisplay> display1(
+      static_cast<AbstractDisplay*>(new CharDisplay('H')));
+  std::string string1("Hello, world.");
+  std::unique_ptr<AbstractDisplay> display2(
+      static_cast<AbstractDisplay*>(new StringDisplay(string1)));
+  std::string string2("こんにちは。");
+  std::unique_ptr<AbstractDisplay> display3(
+      static_cast<AbstractDisplay*>(new StringDisplay(string2)));
 
-	display1->display();
-	display2->display();
-	display3->display();
+  display1->display();
+  display2->display();
+  display3->display();
 
-	return 0;
+  return 0;
 }

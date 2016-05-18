@@ -9,12 +9,10 @@
 #include <PrintBanner.h>
 #include <memory>
 
-
 int main() {
-	std::string string = "Hello";
-	std::unique_ptr<IPrint> print(
-			static_cast<IPrint*>(new PrintBanner(string)));
-	print->print_weak();
-	print->print_strong();
-	return 0;
+  std::string string = "Hello";
+  std::unique_ptr<IPrint> print(static_cast<IPrint*>(new PrintBanner(string)));
+  print->print_weak();
+  print->print_strong();
+  return 0;
 }

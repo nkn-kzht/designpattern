@@ -14,15 +14,15 @@
 namespace framework {
 class IProduct;
 class IFactory {
-public:
-	IFactory();
-	virtual ~IFactory();
-	std::shared_ptr<framework::IProduct> create(std::string& owner);
-protected:
-	virtual std::shared_ptr<framework::IProduct> createProduct(
-			std::string& owner) = 0;
-	virtual void registerProduct(
-			std::shared_ptr<framework::IProduct>& productPtr) = 0;
+ public:
+  IFactory();
+  virtual ~IFactory();
+  std::shared_ptr<framework::IProduct> create(std::string& owner);
+ protected:
+  virtual std::shared_ptr<framework::IProduct> createProduct(
+      std::string& owner) = 0;
+  virtual void registerProduct(
+      std::shared_ptr<framework::IProduct>& productPtr) = 0;
 };
 }
 

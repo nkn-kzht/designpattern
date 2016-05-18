@@ -11,18 +11,18 @@
 #include <memory>
 #include <IProduct.h>
 
-class MessageBox: public framework::IProduct {
-public:
-	explicit MessageBox(const char decochar);
-	virtual ~MessageBox();
-	MessageBox(const MessageBox& obj) = default;
-	virtual std::unique_ptr<framework::IProduct> createClone();
-	virtual void use(const std::string& s) const;
-private:
-	MessageBox(MessageBox&& obj) = delete;
-	MessageBox& operator=(const MessageBox& obj) = delete;
-	MessageBox& operator=(MessageBox && obj) = delete;
-	const char decochar_;
+class MessageBox : public framework::IProduct {
+ public:
+  explicit MessageBox(const char decochar);
+  virtual ~MessageBox();
+  MessageBox(const MessageBox& obj) = default;
+  virtual std::unique_ptr<framework::IProduct> createClone();
+  virtual void use(const std::string& s) const;
+ private:
+  MessageBox(MessageBox&& obj) = delete;
+  MessageBox& operator=(const MessageBox& obj) = delete;
+  MessageBox& operator=(MessageBox && obj) = delete;
+  const char decochar_;
 };
 
 #endif /* INCLUDES_MESSAGEBOX_H_ */

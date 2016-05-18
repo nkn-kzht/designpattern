@@ -9,11 +9,11 @@
 #define INCLUDES_PRINT_H_
 
 class Print {
-public:
-	Print();
-	virtual ~Print();
-	virtual void print_weak() = 0;
-	virtual void print_strong() = 0;
+ public:
+  Print();
+  virtual ~Print();
+  virtual void print_weak() = 0;
+  virtual void print_strong() = 0;
 };
 
 #endif /* INCLUDES_PRINT_H_ */

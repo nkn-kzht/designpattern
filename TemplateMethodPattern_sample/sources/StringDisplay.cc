@@ -9,30 +9,30 @@
 #include <cstring>
 #include <iostream>
 
-StringDisplay::StringDisplay(const std::string& string) :
-		string_(string) {
+StringDisplay::StringDisplay(const std::string& string)
+    : string_(string) {
 }
 
 StringDisplay::~StringDisplay() {
 }
 
 void StringDisplay::open() {
-	printLine();
+  printLine();
 }
 
 void StringDisplay::print() {
-	std::cout << "|" << string_ << "|" << std::endl;
+  std::cout << "|" << string_ << "|" << std::endl;
 }
 
 void StringDisplay::close() {
-	printLine();
+  printLine();
 }
 
 void StringDisplay::printLine() {
-	std::cout << "+";
-	int size = static_cast<int>(string_.size());
-	for (int i = 0; i < size; i++) {
-		std::cout << "-";
-	}
-	std::cout << "+" << std::endl;
+  std::cout << "+";
+  int size = static_cast<int>(string_.size());
+  for (int i = 0; i < size; i++) {
+    std::cout << "-";
+  }
+  std::cout << "+" << std::endl;
 }

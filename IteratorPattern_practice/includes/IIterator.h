@@ -11,11 +11,11 @@
 #include <IItem.h>
 
 class IIterator {
-public:
-	virtual ~IIterator() {
-	}
-	virtual bool has_next() const = 0;
-	virtual const IItem& next() = 0;
+ public:
+  virtual ~IIterator() {
+  }
+  virtual bool has_next() const = 0;
+  virtual const IItem& next() = 0;
 };
 
 #endif /* INCLUDES_IITERATOR_H_ */

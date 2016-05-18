@@ -13,7 +13,7 @@ Singleton::~Singleton() {
 }
 
 const Singleton& Singleton::getInstance() {
-	return singleton_;
+  return singleton_;
 }
 
 Singleton::Singleton() {

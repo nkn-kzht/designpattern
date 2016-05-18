@@ -11,13 +11,13 @@
 #include <string>
 
 class Banner {
-public:
-	Banner(std::string& string);
-	virtual ~Banner();
-	void show_with_paren();
-	void show_with_aster();
-private:
-	std::string string_;
+ public:
+  Banner(std::string& string);
+  virtual ~Banner();
+  void show_with_paren();
+  void show_with_aster();
+ private:
+  std::string string_;
 };
 
 #endif /* INCLUDES_BANNER_H_ */

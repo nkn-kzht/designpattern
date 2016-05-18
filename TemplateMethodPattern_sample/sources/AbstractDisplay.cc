@@ -14,10 +14,10 @@ AbstractDisplay::~AbstractDisplay() {
 }
 
 void AbstractDisplay::display() {
-	static const int TIMES = 5;
-	open();
-	for (int i = 0; i < TIMES; i++) {
-		print();
-	}
-	close();
+  static const int TIMES = 5;
+  open();
+  for (int i = 0; i < TIMES; i++) {
+    print();
+  }
+  close();
 }

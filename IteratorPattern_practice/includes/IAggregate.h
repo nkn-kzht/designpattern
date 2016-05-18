@@ -11,13 +11,12 @@
 #include <IIterator.h>
 #include <memory>
 
-
 class IAggregate {
-public:
-	virtual ~IAggregate() {
-	}
-	virtual std::shared_ptr<IIterator> iterator() = 0;
-	;
+ public:
+  virtual ~IAggregate() {
+  }
+  virtual std::shared_ptr<IIterator> iterator() = 0;
+  ;
 };
 
 #endif /* INCLUDES_IAGGREGATE_H_ */

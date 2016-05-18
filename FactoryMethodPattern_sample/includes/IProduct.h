@@ -10,10 +10,10 @@
 
 namespace framework {
 class IProduct {
-public:
-	virtual ~IProduct() {
-	}
-	virtual void use() = 0;
+ public:
+  virtual ~IProduct() {
+  }
+  virtual void use() = 0;
 };
 }
 
